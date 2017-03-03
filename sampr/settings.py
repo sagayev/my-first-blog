@@ -106,7 +106,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'AZT'
+TIME_ZONE = 'UTC'
 
 USE_I18N = True
 
@@ -120,3 +120,6 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+
+LOGIN_REDIRECT_URL = '/' 
+#https://djangogirls.gitbooks.io/django-girls-tutorial-extensions/authentication_authorization/
